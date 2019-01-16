@@ -1,18 +1,25 @@
 {
-  "name": "koa2-jhipster",
-  "version": "0.0.1",
-  "description": "JHipster middleware for koa2.",
-  "main": "index.js",
-  "repository": "https://github.com/13wolf/koa2-jhipster.git",
-  "author": "13wolf",
-  "license": "MIT",
-  "keywords": [
-    "koa",
-    "middleware",
-    "JHipster",
-    "axios"
-  ],
-  "dependencies": {
-    "axios": "^0.18.0"
-  }
+    "name": "koa2-jhipster",
+    "version": "0.0.1",
+    "description": "JHipster middleware for koa2.",
+    "main": "index.js",
+    "repository": "https://github.com/13wolf/koa2-jhipster.git",
+    "author": "13wolf",
+    "license": "MIT",
+    "keywords": [
+        "koa",
+        "middleware",
+        "JHipster",
+        "axios"
+    ],
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "axios": "^0.18.0"
+    },
+    "devDependencies": {
+        "tslint": "^5.12.1",
+        "typescript": "^3.2.2"
+    }
 }
