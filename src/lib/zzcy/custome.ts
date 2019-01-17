@@ -1,5 +1,5 @@
 import utils from "./axios";
-const getJson = () => {
+export function getJson() {
   return utils.get("/").then(result => {
     // tslint:disable-next-line: no-console
     console.log(result);
@@ -7,5 +7,5 @@ const getJson = () => {
     // tslint:disable-next-line: no-console
     console.error(err);
   });
-};
+}
 export default getJson;
