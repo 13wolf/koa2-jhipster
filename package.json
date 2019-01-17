@@ -1,6 +1,6 @@
 {
   "name": "koa2-jhipster",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JHipster middleware for koa2.",
   "main": "dist/index",
   "typings": "dist/index",
@@ -8,7 +8,10 @@
   "author": "13wolf",
   "license": "MIT",
   "keywords": [
-    "koa", "middleware", "JHipster", "axios"
+    "koa",
+    "middleware",
+    "JHipster",
+    "axios"
   ],
   "scripts": {
     "prepublishOnly": "npm run compile",
@@ -29,5 +32,9 @@
   "publishConfig": {
     "registry": "http://192.168.0.108:8081/repository/npm-zzcy/"
   },
-  "files": ["dist/index.js", "dist/index.d.ts", "dist/lib"]
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/lib"
+  ]
 }
