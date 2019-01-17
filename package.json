@@ -1,25 +1,33 @@
 {
-    "name": "koa2-jhipster",
-    "version": "0.0.1",
-    "description": "JHipster middleware for koa2.",
-    "main": "index.js",
-    "repository": "https://github.com/13wolf/koa2-jhipster.git",
-    "author": "13wolf",
-    "license": "MIT",
-    "keywords": [
-        "koa",
-        "middleware",
-        "JHipster",
-        "axios"
-    ],
-    "scripts": {
-        "build": "tsc"
-    },
-    "dependencies": {
-        "axios": "^0.18.0"
-    },
-    "devDependencies": {
-        "tslint": "^5.12.1",
-        "typescript": "^3.2.2"
-    }
+  "name": "koa2-jhipster",
+  "version": "0.0.1",
+  "description": "JHipster middleware for koa2.",
+  "main": "dist/index",
+  "typings": "dist/index",
+  "repository": "https://github.com/13wolf/koa2-jhipster.git",
+  "author": "13wolf",
+  "license": "MIT",
+  "keywords": [
+    "koa", "middleware", "JHipster", "axios"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && tsc -p .",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "koa": "^2.6.2",
+    "prettier": "^1.15.3",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.2"
+  },
+  "publishConfig": {
+    "registry": "http://192.168.0.108:8081/repository/npm-zzcy/"
+  },
+  "files": ["dist/index.js", "dist/index.d.ts", "dist/lib"]
 }

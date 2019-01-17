@@ -1,3 +1,10 @@
-export default function add(): number {
-  return 1 + 2;
+import {AxiosRequestConfig} from "axios";
+import jhipster from "./lib";
+export interface IZzcyConfig {
+  readonly axiosConfig?: AxiosRequestConfig;
+  readonly username?: string;
+  readonly password?: string;
+  [propName: string]: any;
 }
+
+export default jhipster;

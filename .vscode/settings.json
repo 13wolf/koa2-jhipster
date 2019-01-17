@@ -1,0 +1,13 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [120],
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true
+  },
+  "tslint.autoFixOnSave": true,
+  "typescript.format.enable": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
