@@ -8,10 +8,7 @@
   "author": "13wolf",
   "license": "MIT",
   "keywords": [
-    "koa",
-    "middleware",
-    "JHipster",
-    "axios"
+    "koa", "middleware", "JHipster", "axios"
   ],
   "scripts": {
     "prepublishOnly": "npm run compile",
@@ -30,11 +27,7 @@
     "typescript": "^3.2.2"
   },
   "publishConfig": {
-    "registry": "http://192.168.0.108:8081/repository/npm-zzcy/"
+    "registry": "http://192.168.0.108:8081/repository/npm/"
   },
-  "files": [
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/lib"
-  ]
+  "files": ["dist/index.js", "dist/index.d.ts", "dist/lib"]
 }
